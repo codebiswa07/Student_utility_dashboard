@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Utility Dashboard</title>
+</head>
+
+<body>
+    <h1>Student Utility Dashboard</h1>
+    <!--Theme section-->
+    <section id="theme">
+        <button onclick="toggletheme()">Dark Mode</button>
+    </section>
+    <!-- Todo List Section -->
+    <section>
+        <h2>TO-DO List</h2>
+        <input type="text" id="task" placeholder="Enter your task here">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList">
+            <!-- Tasks will be added here -->
+        </ul>
+    </section>
+    <!-- Notes Section -->
+    <section>
+        <h2>Notes</h2>
+        <textarea id="notes" height="160px" width="100%" placeholder="Write your notes here"></textarea>
+        <button onclick="savenotes()">Save Notes</button>
+    </section>
+    <!-- Calculator Section -->
+    <section id="Calculator">
+        <h2>Simple Calculator</h2>
+        <input type="text" id="calcInput" placeholder="Enter numbers and operators">
+        <button onclick="backspace()">⌫</button>
+        <div>
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('0')">0</button>
+            <button onclick="press('+')">+</button>
+            <button onclick="press('-')">-</button>
+            <button onclick="press('*')">*</button>
+            <button onclick="press('/')">/</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearcalc()">C</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
